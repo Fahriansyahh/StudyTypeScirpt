@@ -30,4 +30,19 @@ describe("Any", function () {
     };
     console.log(ObjAlias.data);
   });
+  it("declration simple alias", function () {
+    const objSimple: { id: number; name: string } = {
+      id: 1,
+      name: "fahri",
+    };
+    console.log(objSimple);
+  });
+  it("declarasi objek options ? ", function () {
+    const option: { id: number; nama: string; description?: string[] } = {
+      id: 1,
+      nama: "fahri",
+      description: undefined,
+    };
+    console.log(option);
+  });
 });
